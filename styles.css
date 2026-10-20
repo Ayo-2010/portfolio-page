@@ -142,6 +142,7 @@ main > section { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 9vw
   gap: clamp(28px, 5vw, 64px);
   align-items: center;
   min-height: 78vh;
+  overflow-x: clip;
 }
 
 .hero h1 {
