@@ -112,6 +112,21 @@ main > section { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 9vw
   border-bottom: 1px solid var(--line);
 }
 
+.sec-lede {
+  max-width: 64ch;
+  margin: -8px 0 26px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.sec-lede a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.sec-lede a:hover { color: var(--ink); }
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.22em;
@@ -247,6 +262,10 @@ main > section { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 9vw
 
 .skill-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
 
+@media (min-width: 900px) {
+  .skill-list { grid-template-columns: 1fr 1fr; column-gap: clamp(24px, 4vw, 56px); }
+}
+
 .skill-head { display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 500; margin-bottom: 8px; }
 .skill-head b { color: var(--accent); font-family: var(--head); }
 
@@ -308,6 +327,42 @@ main > section { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 9vw
 }
 
 .card a:hover { color: var(--accent); }
+
+.card-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+
+.more-repos {
+  margin-top: 26px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+}
+
+.more-repos h3 { font-size: 1.05rem; margin-bottom: 14px; }
+
+.repo-list { list-style: none; margin: 0 0 20px; padding: 0; display: grid; }
+
+.repo-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 18px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.repo-list li:first-child { padding-top: 0; }
+
+.repo-list a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+.repo-list a:hover { color: var(--accent); }
+.repo-list span { color: var(--muted); font-size: 0.8rem; }
 
 .timeline-list {
   list-style: none;
@@ -432,6 +487,7 @@ main > section { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 9vw
   .tag-2 { right: 0; }
   .timeline-list { padding-left: 20px; }
   .timeline-list li::before { left: -26px; }
+  .more-repos { padding: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

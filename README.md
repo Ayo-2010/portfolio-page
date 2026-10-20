@@ -1,14 +1,16 @@
-# Ava Renner Portfolio
+# Abdullah Abdulwahab Portfolio
 
-A single page portfolio for a fictional front-end developer.
+A single page portfolio for front-end developer Abdullah Abdulwahab.
 
 ## Features
 
 - Sticky header with the name, section nav and a dark or light theme toggle
 - Editorial hero with a big headline, two buttons and a CSS-only orbital visual
 - About section with two paragraphs of copy
-- Six skill bars that fill to their percentage when scrolled into view
-- Responsive grid of six project cards with tag chips and case study links
+- Ten skill bars, including React, Vue, Nuxt and Tailwind, that fill to their percentage when scrolled into view
+- Responsive grid of six case study cards with tag chips
+- "From GitHub" section with twelve real repositories, live demo and source links
+- Compact list of further repositories and a link to the full GitHub profile
 - Timeline with four experience entries and a marked rail
 - Contact form that validates on submit and confirms without leaving the page
 - Sections fade in on scroll, and prefers-reduced-motion disables every animation
