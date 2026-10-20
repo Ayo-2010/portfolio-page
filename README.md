@@ -9,7 +9,7 @@ A single page portfolio for front-end developer Abdullah Abdulwahab.
 - About section with two paragraphs of copy
 - Ten skill bars, including React, Vue, Nuxt and Tailwind, that fill to their percentage when scrolled into view
 - Responsive grid of six case study cards with tag chips
-- "From GitHub" section with eleven real repositories, live demo and source links
+- "From GitHub" section with twenty-five real repositories, live demo and source links
 - Compact list of further repositories and a link to the full GitHub profile
 - Timeline with four experience entries and a marked rail
 - Contact form that validates on submit and confirms without leaving the page
