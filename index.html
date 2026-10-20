@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ava Renner · Front-end Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="logo" href="#top">Ava Renner<span class="logo-dot">.</span></a>
+  <nav id="navLinks" class="nav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#timeline">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme">Light mode</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Front-end developer · Berlin</p>
+      <h1>Interfaces with<br>clear edges and<br><em>quick</em> fingers.</h1>
+      <p class="intro">I build accessible product interfaces in plain HTML, CSS and JavaScript. Ten years of shipping design systems, dashboards and tools that stay fast on cheap hardware.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#projects">See selected work</a>
+        <a class="btn btn-ghost" href="#contact">Start a project</a>
+      </div>
+      <p class="hint">Tab moves through the nav, the two buttons and the form · the toggle sits top right</p>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="ring ring-a"></div>
+      <div class="ring ring-b"></div>
+      <div class="ring ring-c"></div>
+      <div class="orbit"><span class="orbit-dot"></span></div>
+      <div class="core"><span>AR</span></div>
+      <div class="tick-row"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="tag tag-1">Lighthouse 100</div>
+      <div class="tag tag-2">WCAG 2.2 AA</div>
+      <div class="tag tag-3">Zero dependencies</div>
+    </div>
+  </section>
+
+  <section id="about" class="about reveal">
+    <h2 class="sec-title">About</h2>
+    <div class="about-grid">
+      <p>I started out as a print designer and drifted into the browser because it was the only medium that pushed back. These days I spend most of my time on component libraries, data-dense screens and the small interaction details that decide whether a product feels trustworthy.</p>
+      <p>I work close to the platform. No build step unless the team needs one, no abstractions I cannot explain, and no animation that fights the user. When I am not writing CSS I am teaching it, usually to designers who are tired of waiting for tickets to close.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills reveal">
+    <h2 class="sec-title">Skills</h2>
+    <ul class="skill-list">
+      <li class="skill" data-value="95">
+        <div class="skill-head"><span>HTML &amp; semantic markup</span><b>95%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill" data-value="92">
+        <div class="skill-head"><span>CSS architecture &amp; layout</span><b>92%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill" data-value="88">
+        <div class="skill-head"><span>JavaScript &amp; DOM APIs</span><b>88%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill" data-value="84">
+        <div class="skill-head"><span>Accessibility &amp; testing</span><b>84%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill" data-value="78">
+        <div class="skill-head"><span>Canvas &amp; SVG data viz</span><b>78%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill" data-value="70">
+        <div class="skill-head"><span>Performance budgets</span><b>70%</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects reveal">
+    <h2 class="sec-title">Selected work</h2>
+    <div class="project-grid">
+      <article class="card">
+        <h3>Atlas Console</h3>
+        <p>Operations dashboard for a logistics fleet with live canvas charts.</p>
+        <ul class="tags"><li>Canvas</li><li>Dashboard</li><li>Dark UI</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+      <article class="card">
+        <h3>Ledger</h3>
+        <p>Plain JavaScript accounting tool with offline storage and exports.</p>
+        <ul class="tags"><li>Vanilla JS</li><li>localStorage</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+      <article class="card">
+        <h3>Field Notes</h3>
+        <p>Note taking app built for glove friendly touch targets in bad light.</p>
+        <ul class="tags"><li>Accessibility</li><li>PWA</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+      <article class="card">
+        <h3>Signal</h3>
+        <p>Design system of ninety two components documented in one page.</p>
+        <ul class="tags"><li>Design system</li><li>Tokens</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+      <article class="card">
+        <h3>Tempo</h3>
+        <p>Web Audio metronome and practice trainer for session musicians.</p>
+        <ul class="tags"><li>Web Audio</li><li>Animation</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+      <article class="card">
+        <h3>Contour</h3>
+        <p>Interactive map of hiking routes drawn with SVG paths only.</p>
+        <ul class="tags"><li>SVG</li><li>Interaction</li></ul>
+        <a href="#contact">View case study</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="timeline" class="timeline reveal">
+    <h2 class="sec-title">Experience</h2>
+    <ol class="timeline-list">
+      <li>
+        <span class="when">2023 — now</span>
+        <h3>Lead front-end engineer · Northwind</h3>
+        <p>Own the component library used by four product teams and set the performance budget for the web client.</p>
+      </li>
+      <li>
+        <span class="when">2020 — 2023</span>
+        <h3>Senior UI engineer · Meridian</h3>
+        <p>Rebuilt the analytics surface and cut initial JavaScript by sixty percent without losing any feature.</p>
+      </li>
+      <li>
+        <span class="when">2017 — 2020</span>
+        <h3>Front-end developer · Studio Kauz</h3>
+        <p>Shipped twelve marketing sites and the first version of the studio design system.</p>
+      </li>
+      <li>
+        <span class="when">2015 — 2017</span>
+        <h3>Web designer · Folk Press</h3>
+        <p>Moved a print catalogue of nine hundred titles online and learned to love vertical rhythm.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2 class="sec-title">Contact</h2>
+    <div class="contact-grid">
+      <form id="contactForm" novalidate>
+        <label class="field">
+          <span>Name</span>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name">
+          <small class="err" data-for="name"></small>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <small class="err" data-for="email"></small>
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea id="message" name="message" rows="5" placeholder="What are you building?"></textarea>
+          <small class="err" data-for="message"></small>
+        </label>
+        <button class="btn btn-solid" type="submit">Send message</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+      <aside class="contact-side">
+        <p>Available for freelance work from January. Remote first, Berlin time zone, happy to travel for kick offs.</p>
+        <ul class="social">
+          <li><a href="#top">GitHub</a></li>
+          <li><a href="#top">CodePen</a></li>
+          <li><a href="#top">Mastodon</a></li>
+          <li><a href="#top">Email</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <p>Built by hand with plain HTML, CSS and JavaScript.</p>
+  <a href="#top">Back to top</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
