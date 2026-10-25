@@ -52,7 +52,7 @@ function setupReveal() {
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
   for (var j = 0; j < items.length; j++) io.observe(items[j]);
 }
 
