@@ -60,8 +60,10 @@ function setupSkills() {
   var skills = document.querySelectorAll('.skill');
   function fill() {
     for (var i = 0; i < skills.length; i++) {
+      var value = skills[i].dataset.value;
+      if (value === undefined) continue;
       var bar = skills[i].querySelector('.skill-fill');
-      bar.style.width = skills[i].dataset.value + '%';
+      bar.style.width = value + '%';
     }
   }
   if (reduceMotion || !('IntersectionObserver' in window)) {
@@ -77,7 +79,7 @@ function setupSkills() {
         io.disconnect();
       }
     });
-  }, { threshold: 0.35 });
+  }, { threshold: 0 });
   io.observe(document.getElementById('skills'));
 }
 
@@ -196,6 +198,30 @@ emailEl.addEventListener('input', function () {
 messageEl.addEventListener('input', function () {
   if (messageEl.closest('.field').classList.contains('has-error')) validateMessage();
 });
+
+var showMoreBtn = document.getElementById('showMore');
+var githubGrid = document.getElementById('githubGrid');
+
+if (showMoreBtn && githubGrid) {
+  var extraCount = githubGrid.querySelectorAll('.card.is-extra').length;
+  var collapsedLabel = 'Show ' + extraCount + ' more';
+
+  showMoreBtn.addEventListener('click', function () {
+    var open = githubGrid.classList.toggle('show-all');
+    showMoreBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    showMoreBtn.textContent = open ? 'Show less' : collapsedLabel;
+
+    if (!open) {
+      var top = showMoreBtn.getBoundingClientRect().top;
+      if (top < 0 || top > window.innerHeight) {
+        showMoreBtn.scrollIntoView({
+          behavior: reduceMotion ? 'auto' : 'smooth',
+          block: 'center'
+        });
+      }
+    }
+  });
+}
 
 setupReveal();
 setupSkills();

@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal { opacity: 1; transform: none; } .card.is-extra { display: flex; }</style></noscript>
 </head>
 <body>
 <header class="site-head">
@@ -26,7 +27,7 @@
 <main id="top">
   <section class="hero">
     <div class="hero-copy reveal">
-      <p class="eyebrow">Front-end developer · Nigeria</p>
+      <p class="eyebrow"><span>Front-end developer</span> · <span>aspiring full-stack</span> · <span>Nigeria</span></p>
       <h1>Interfaces with<br>clear edges and<br><em>quick</em> fingers.</h1>
       <p class="intro">I build accessible product interfaces with plain HTML, CSS and JavaScript, and reach for React, Vue, Nuxt and Tailwind when a product calls for them. I care about design systems, dashboards and tools that stay fast on cheap hardware.</p>
       <div class="hero-actions">
@@ -100,11 +101,28 @@
         <div class="skill-head"><span>Tailwind CSS</span><b>86%</b></div>
         <div class="skill-track"><span class="skill-fill"></span></div>
       </li>
+      <li class="skill is-learning">
+        <div class="skill-head"><span>Node.js</span><b>Learning</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill is-learning">
+        <div class="skill-head"><span>Express &amp; REST APIs</span><b>Learning</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill is-learning">
+        <div class="skill-head"><span>SQL &amp; databases</span><b>Learning</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
+      <li class="skill is-learning">
+        <div class="skill-head"><span>Git &amp; CI</span><b>Learning</b></div>
+        <div class="skill-track"><span class="skill-fill"></span></div>
+      </li>
     </ul>
   </section>
 
   <section id="projects" class="projects reveal">
     <h2 class="sec-title">Selected work</h2>
+    <p class="sec-lede">Six projects I picked to show the range — every one of them has a live demo and the source.</p>
     <div class="project-grid">
       <article class="card">
         <h3>Atlas Console</h3>
@@ -165,8 +183,8 @@
 
   <section id="github" class="projects reveal">
     <h2 class="sec-title">From GitHub</h2>
-    <p class="sec-lede">Real repositories from <a href="https://github.com/Ayo-2010" target="_blank" rel="noopener">github.com/Ayo-2010</a>, with a live demo wherever the project is deployed.</p>
-    <div class="project-grid">
+    <p class="sec-lede">Forty-five more repositories from <a href="https://github.com/Ayo-2010" target="_blank" rel="noopener">github.com/Ayo-2010</a> — live demos where a project has been deployed, source for every one.</p>
+    <div class="project-grid" id="githubGrid">
       <article class="card">
         <h3>codeIngot</h3>
         <p>A learn-by-building platform with lessons, runnable code and progress tracking, built on Nuxt and Firebase.</p>
@@ -239,7 +257,7 @@
           <a href="https://github.com/Ayo-2010/Ceramic-WebPage" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Vue Todo</h3>
         <p>A focused todo app for adding, completing and filtering tasks, with a small, fast build.</p>
         <ul class="tags"><li>Vue 3</li><li>Vite</li></ul>
@@ -248,7 +266,7 @@
           <a href="https://github.com/Ayo-2010/project-2-todo-app" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Guess My Number</h3>
         <p>A number guessing game with a limited attempt counter and a best score saved in local storage.</p>
         <ul class="tags"><li>JavaScript</li><li>Game</li><li>localStorage</li></ul>
@@ -257,7 +275,7 @@
           <a href="https://github.com/Ayo-2010/Guessing-Game" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Noor</h3>
         <p>A Quran study companion built for the Quran Foundation hackathon with Gemini and Firebase.</p>
         <ul class="tags"><li>TypeScript</li><li>Gemini</li><li>Firebase</li></ul>
@@ -265,7 +283,7 @@
           <a href="https://github.com/Ayo-2010/Noor" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Transit Lab</h3>
         <p>A live metro control room with an interactive SVG map, Dijkstra journey planning, line filters and eight simulated trains.</p>
         <ul class="tags"><li>SVG</li><li>Routing</li><li>Vanilla JS</li></ul>
@@ -274,7 +292,7 @@
           <a href="https://github.com/Ayo-2010/transit-lab" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Meridian</h3>
         <p>A DST-aware world clock and meeting planner with eight cities, a 24-hour overlap timeline and ranked meeting hours.</p>
         <ul class="tags"><li>Time zones</li><li>Intl</li><li>Tools</li></ul>
@@ -283,7 +301,7 @@
           <a href="https://github.com/Ayo-2010/meridian" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Archivist</h3>
         <p>A local-first notes workspace with wiki links, backlinks, Markdown preview, tags and a force-directed note graph.</p>
         <ul class="tags"><li>localStorage</li><li>Canvas</li><li>Markdown</li></ul>
@@ -292,7 +310,7 @@
           <a href="https://github.com/Ayo-2010/archivist" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Foundry</h3>
         <p>A design-token studio for colour scales, type ramps, spacing, radius, shadows and live WCAG contrast checks.</p>
         <ul class="tags"><li>Design tokens</li><li>WCAG</li><li>CSS</li></ul>
@@ -301,7 +319,7 @@
           <a href="https://github.com/Ayo-2010/foundry" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Rally</h3>
         <p>A drag-to-seed tournament bracket with editable scores, automatic progression, simulation and JSON export.</p>
         <ul class="tags"><li>Bracket</li><li>Drag &amp; drop</li><li>Export</li></ul>
@@ -310,7 +328,7 @@
           <a href="https://github.com/Ayo-2010/rally" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Cadence</h3>
         <p>A habit tracker with a twelve-week heatmap, streak analytics, weekday insights and a fourteen-day chart.</p>
         <ul class="tags"><li>Habit tracker</li><li>Heatmap</li><li>localStorage</li></ul>
@@ -319,7 +337,7 @@
           <a href="https://github.com/Ayo-2010/cadence" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Patchbay</h3>
         <p>A five-voice rhythm machine with synthesized drums, a bass sequencer, swing, presets and a live oscilloscope.</p>
         <ul class="tags"><li>Web Audio</li><li>Sequencer</li><li>Canvas</li></ul>
@@ -328,7 +346,7 @@
           <a href="https://github.com/Ayo-2010/patchbay" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Loom</h3>
         <p>A generative textile studio with tileable patterns, curated palettes, product mockups and SVG or PNG export.</p>
         <ul class="tags"><li>Generative</li><li>Canvas</li><li>Export</li></ul>
@@ -337,7 +355,7 @@
           <a href="https://github.com/Ayo-2010/loom" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Tidepool</h3>
         <p>A coastal field guide with twelve illustrated species, habitat filters, saved species and side-by-side comparison.</p>
         <ul class="tags"><li>Field guide</li><li>SVG</li><li>Comparison</li></ul>
@@ -346,7 +364,7 @@
           <a href="https://github.com/Ayo-2010/tidepool" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Mosaic</h3>
         <p>A drag-and-drop bento layout builder with responsive previews, an inspector, undo and standalone HTML export.</p>
         <ul class="tags"><li>Layout builder</li><li>Drag &amp; drop</li><li>Export</li></ul>
@@ -355,7 +373,7 @@
           <a href="https://github.com/Ayo-2010/mosaic" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Choreograph</h3>
         <p>A keyframe animation studio with a draggable timeline, easing curves, a live preview and copyable CSS.</p>
         <ul class="tags"><li>Animation</li><li>Keyframes</li><li>CSS</li></ul>
@@ -364,7 +382,7 @@
           <a href="https://github.com/Ayo-2010/choreograph" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Almanac</h3>
         <p>A field almanac for sun times, moon phases, daylight curves, sky events and local field notes.</p>
         <ul class="tags"><li>Astronomy</li><li>SVG</li><li>Calendar</li></ul>
@@ -373,7 +391,7 @@
           <a href="https://github.com/Ayo-2010/almanac" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Rota</h3>
         <p>A fourteen-day workforce planner with availability, auto-fill, conflict checks, coverage stats and CSV export.</p>
         <ul class="tags"><li>Scheduling</li><li>Auto-fill</li><li>CSV</li></ul>
@@ -382,7 +400,7 @@
           <a href="https://github.com/Ayo-2010/rota" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Cipher</h3>
         <p>A local cryptography workbench for five classical ciphers with live frequency and entropy analysis.</p>
         <ul class="tags"><li>Cryptography</li><li>Analysis</li><li>Offline</li></ul>
@@ -391,7 +409,7 @@
           <a href="https://github.com/Ayo-2010/cipher" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Palimpsest</h3>
         <p>A parchment writing archive with layered revisions, marginalia, version comparison and local autosave.</p>
         <ul class="tags"><li>Writing</li><li>Local-first</li><li>Manuscript</li></ul>
@@ -400,7 +418,7 @@
           <a href="https://github.com/Ayo-2010/palimpsest" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Vending</h3>
         <p>A bright retro drinks machine with coins, keypad purchases, stock, change and a live sales tape.</p>
         <ul class="tags"><li>Simulation</li><li>Retail</li><li>CSS Art</li></ul>
@@ -409,7 +427,7 @@
           <a href="https://github.com/Ayo-2010/vending" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Shortwave</h3>
         <p>A 1970s receiver with analogue tuning, station schedules, presets and generated radio static.</p>
         <ul class="tags"><li>Web Audio</li><li>Radio</li><li>Interface</li></ul>
@@ -418,7 +436,7 @@
           <a href="https://github.com/Ayo-2010/shortwave" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Orbital</h3>
         <p>A 1960s flight-dynamics desk for orbit parameters, launch windows, tracked objects and pass schedules.</p>
         <ul class="tags"><li>SVG</li><li>Simulation</li><li>Space</li></ul>
@@ -427,7 +445,7 @@
           <a href="https://github.com/Ayo-2010/orbital" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Marigold</h3>
         <p>A 1950s diner order pad with seat tabs, kitchen tickets, tips and a printed customer receipt.</p>
         <ul class="tags"><li>Ordering</li><li>Simulation</li><li>CSS Art</li></ul>
@@ -436,7 +454,7 @@
           <a href="https://github.com/Ayo-2010/marigold" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Herbarium</h3>
         <p>A Victorian botanical cabinet with specimen plates, family search, field notes and archival mounting.</p>
         <ul class="tags"><li>Archive</li><li>Search</li><li>Local-first</li></ul>
@@ -445,7 +463,7 @@
           <a href="https://github.com/Ayo-2010/herbarium" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Splitflap</h3>
         <p>An amber airport departures board with mechanical letter flips, delay actions and live flight statuses.</p>
         <ul class="tags"><li>Animation</li><li>Web Audio</li><li>Boards</li></ul>
@@ -454,7 +472,7 @@
           <a href="https://github.com/Ayo-2010/splitflap" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Lost Sounds</h3>
         <p>A black-and-gold sound museum with live-synthesised exhibits, a moving waveform and saved favourites.</p>
         <ul class="tags"><li>Web Audio</li><li>Canvas</li><li>Museum</li></ul>
@@ -463,7 +481,7 @@
           <a href="https://github.com/Ayo-2010/lost-sounds" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Werkstatt</h3>
         <p>A Bauhaus poster studio with geometric layout presets, ink palettes, saved plates and SVG export.</p>
         <ul class="tags"><li>SVG</li><li>Generator</li><li>Export</li></ul>
@@ -472,7 +490,7 @@
           <a href="https://github.com/Ayo-2010/werkstatt" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Sunday</h3>
         <p>A soft pastel meal planner with seven days of slots, a recipe bank, servings and an automatic grocery list.</p>
         <ul class="tags"><li>Planning</li><li>Groceries</li><li>Drag and Drop</li></ul>
@@ -481,7 +499,7 @@
           <a href="https://github.com/Ayo-2010/sunday" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Riso</h3>
         <p>A fluorescent risograph zine press with ink pairings, editable pages, crop marks and print preview.</p>
         <ul class="tags"><li>Print</li><li>Zine</li><li>Layout</li></ul>
@@ -490,7 +508,7 @@
           <a href="https://github.com/Ayo-2010/riso" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Telegraph</h3>
         <p>A working Morse desk with audible keying, a moving paper tape, speed control and a station log.</p>
         <ul class="tags"><li>Web Audio</li><li>Morse</li><li>History</li></ul>
@@ -499,7 +517,7 @@
           <a href="https://github.com/Ayo-2010/telegraph" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Cartographer</h3>
         <p>An antique island chart with clickable regions, waypoints, a gazetteer and a saved expedition log.</p>
         <ul class="tags"><li>SVG</li><li>Map</li><li>Lore</li></ul>
@@ -508,7 +526,7 @@
           <a href="https://github.com/Ayo-2010/cartographer" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Sprint</h3>
         <p>A typewriter writing sprint with timed sessions, prompts, live WPM and a saved writing history.</p>
         <ul class="tags"><li>Writing</li><li>Timer</li><li>Focus</li></ul>
@@ -517,7 +535,7 @@
           <a href="https://github.com/Ayo-2010/sprint" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Crate</h3>
         <p>A 1970s vinyl crate with sleeve art, search, genres, ratings, tracklists and a now-playing selection.</p>
         <ul class="tags"><li>Collection</li><li>Music</li><li>Local-first</li></ul>
@@ -526,7 +544,7 @@
           <a href="https://github.com/Ayo-2010/crate" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Contact Sheet</h3>
         <p>A monochrome photographer's proof sheet with twenty-four frames, loupe view, ratings and captions.</p>
         <ul class="tags"><li>Film</li><li>Selection</li><li>Gallery</li></ul>
@@ -535,7 +553,7 @@
           <a href="https://github.com/Ayo-2010/contact-sheet" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Mailroom</h3>
         <p>A 1990s desktop email client with folders, unread counts, search, compose, reply and a taskbar.</p>
         <ul class="tags"><li>Retro</li><li>Email</li><li>Desktop</li></ul>
@@ -544,7 +562,7 @@
           <a href="https://github.com/Ayo-2010/mailroom" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Broadsheet</h3>
         <p>A daily newspaper front page with a breaking ticker, category filters, article reader and saved clippings.</p>
         <ul class="tags"><li>News</li><li>Editorial</li><li>Print</li></ul>
@@ -553,7 +571,7 @@
           <a href="https://github.com/Ayo-2010/broadsheet" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Dollhouse</h3>
         <p>A pastel isometric dollhouse with six rooms, wallpaper and floor palettes, furniture and a night mode.</p>
         <ul class="tags"><li>SVG</li><li>Decorating</li><li>Play</li></ul>
@@ -562,7 +580,7 @@
           <a href="https://github.com/Ayo-2010/dollhouse" target="_blank" rel="noopener">Source</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card is-extra">
         <h3>Terrarium</h3>
         <p>A glass terrarium simulator with misting, sunlight, humidity, plant health and a growing day count.</p>
         <ul class="tags"><li>Simulation</li><li>Plants</li><li>Canvas</li></ul>
@@ -572,6 +590,7 @@
         </div>
       </article>
     </div>
+    <button class="btn btn-ghost show-more" id="showMore" type="button" aria-expanded="false" aria-controls="githubGrid">Show 37 more</button>
     <div class="more-repos">
       <h3>Also on GitHub</h3>
       <ul class="repo-list">
